@@ -8,7 +8,12 @@
 # - {name: Percentage Passing Req., unit: '%', datatype: float64, description: Percentage of pixels meeting the requirements.}
 # delimiter: ','
 # meta: !!omap
-# - {comments: Roman/WFI total noise measured for each Sensor Control Unit (SCU)}
+# - {comments: 'Roman/WFI total noise measured for each Sensor Control Unit (SCU). Total noise data were acquired from WFI TVAC2 measurements
+#     of 100 total exposures, each with a ~170-second integration time, consisting of 55 non-destructive reads and 0 skip frames. Specifically,
+#     50 exposures were taken with the Guide Window (GW) at the bottom left of each sensor chip assembly, and 50 with the GW at the top
+#     right. Data analysis included top and column reference pixel correction (using a Savitzky-Golay filter), slope calculation of digital
+#     number per unit time per pixel using all frames, and total noise calculation per pixel as the standard deviation of the slopes multiplied
+#     by the total exposure time (~170-seconds). A global conversion gain was then applied to convert the results to electrons.'}
 # schema: astropy-2.0
 SCU#,SCA,Total noise - median,Total noise - mean,Percentage Passing Req.
 1,22081,6.67,7.52,98.86
