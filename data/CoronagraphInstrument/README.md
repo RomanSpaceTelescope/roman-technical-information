@@ -6,7 +6,6 @@
 
 | Folder name      | Description                                     |
 |------------------|-------------------------------------------------|
-| CoronagraphInstrument_Overview.yaml | Overview of the Roman Coronagraph including modes, predicted contrast, and host star V-mag restriction. |
 | CoronagraphParameters          | Roman Coronagraph Inner and Outer Working Angles, and Annular Sizes              |
 | Detector | Roman Coronagraph detector properties. |
 | Filters     | Roman Coronagraph filter parameters. |
