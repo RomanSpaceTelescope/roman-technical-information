@@ -3,9 +3,9 @@
 # datatype:
 # - {name: wavelength, unit: um, datatype: float64, description: wavelength in microns}
 # - {name: fline_point, unit: erg / (cm*cm) / s, datatype: float64, description: 5-sigma detection limit for a 1-hour exposure time with zodiacal light background at twice the minimum intensity for a (2-pixel resolving power) point source's emission line's integrated flux in units of 1E-17 ergs/cm^2/sec.}
-# - {name: mAB_point, unit: ABmag, datatype: float64, description: 5-sigma (per pixel) detection limit for a 1-hour exposure time with zodiacal light background at twice the minimum intensity for a (2-pixel resolving power) point source's continua in units of AB magnitude per pixel.}
+# - {name: mAB_point, unit: ABmag / pix, datatype: float64, description: 5-sigma (per pixel) detection limit for a 1-hour exposure time with zodiacal light background at twice the minimum intensity for a (2-pixel resolving power) point source's continua in units of AB magnitude per pixel.}
 # - {name: fline_galaxy, unit: erg / (cm*cm) / s, datatype: float64, description: 5-sigma detection limit for a 1-hour exposure time with zodiacal light background at twice the minimum intensity for a compact galaxy's (with half-light radius of 0.3 arcseconds) emission line's integrated flux in units of 1E-17 ergs/cm^2/sec.}
-# - {name: mAB_galaxy, unit: ABmag, datatype: float64, description: 5-sigma (per pixel) detection limit for a 1-hour exposure time with zodiacal light background at twice the minimum intensity for a compact galaxy's (with half-light radius of 0.3 arcseconds) continua in units of AB magnitude per pixel.}
+# - {name: mAB_galaxy, unit: ABmag / pix, datatype: float64, description: 5-sigma (per pixel) detection limit for a 1-hour exposure time with zodiacal light background at twice the minimum intensity for a compact galaxy's (with half-light radius of 0.3 arcseconds) continua in units of AB magnitude per pixel.}
 # delimiter: ','
 # meta: !!omap
 # - {comments: Roman/WFI grism (G150) spectroscopy sensitivity.}

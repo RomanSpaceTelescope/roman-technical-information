@@ -16,8 +16,12 @@ Mission_and_Spacecraft_Parameters:
 Telescope_Parameters:
   primary_mirror_diameter: 2.4 meters
   primary_mirror_effective_diameter: 2.36 meters (diameter of the aperture stop)
+  central_obscuration: 30.3% (linear obscuration of the telescope entrance pupil; diameter ratio)
   mirror_temperature: 265 K
+  WFI_focal_ratio: 7.9 (WFI and telescope's combined focal ratio)
   allowed_roll_angle_range: -15 to +15 degrees around angle providing max solar panel
+  allowed_pitch_angle_range: 54-126 degrees (0 degrees = towards the Sun; 180 degrees = away from the Sun)
+  allowed_yaw_angle_range: 0-360 degrees (about the Sun line)
   jitter: 12 milliarcseconds
   drift: 8 milliarcseconds
 
