@@ -5,4 +5,4 @@
 | Filename| Description|
 |---------|------------|
 | SlewSettle.ecsv  | Roman Space Telescope slew and settle times as a function of slew distance. |
-| example_telescope_slews.yaml | Roman telescope example slew angles and associated slew+settle times. |
+| example_telescope_slews.yaml | Roman Space Telescope example slew angles and associated slew+settle times. |
