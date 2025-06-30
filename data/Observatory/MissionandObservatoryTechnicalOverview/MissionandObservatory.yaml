@@ -2,6 +2,7 @@
 Description: Roman mission, spacecraft, telescope, and instrumentation properties.
 
 Mission_and_Spacecraft_Parameters:
+  launch_date: no later than May 2027
   duration: 5 years, with a 10 year goal
   orbit: Sun-Earth L2
   launch_site: Kennedy Space Center, Florida, USA
