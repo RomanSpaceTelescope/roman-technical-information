@@ -57,7 +57,7 @@ Roman = QTable.read("nominal_roll_angles_dec_1_observatory.ecsv",format="ascii.e
 ```
 
 # Versioning
-You can find the versioning number in VERSION.md.
+You can find the version number in VERSION.md.
 
 The Roman Technical Information repo uses the following version number convention:
 
