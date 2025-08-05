@@ -61,9 +61,9 @@ You can find the version number in VERSION.md.
 
 The Roman Technical Information repo uses the following version number convention:
 
-MA.MI.BG
+MAJOR.MINOR.PATCH
 
-Where MA is a major code change (such as the introduction of a many new parameters), MI is a minor code change (such as the introduction of a new table), and BG is a small bugfix (e.g., fixing a typo).
+Where MAJOR is a major code change (such as the introduction of a many new parameters), MINOR is a minor code change (such as the introduction of a new table), and PATCH is a small patch/bugfix (e.g., fixing a typo). See [Semantic Versioning](https://semver.org) for more details.
 
 # Contributions and Feedback
 
