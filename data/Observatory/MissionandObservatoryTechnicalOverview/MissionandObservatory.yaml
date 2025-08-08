@@ -18,7 +18,7 @@ Telescope_Parameters:
   primary_mirror_effective_diameter: 2.36 meters (diameter of the aperture stop)
   mirror_temperature: 265 K
   allowed_roll_angle_range: -15 to +15 degrees around angle providing max solar panel
-  jitter: 12 milliarcseconds
+  jitter: 8 milliarcseconds
   drift: 8 milliarcseconds
 
 Observatory_Instrumentation:
