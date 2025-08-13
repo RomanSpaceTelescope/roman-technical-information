@@ -56,6 +56,15 @@ print(Roman['RA_sun'].unit)
 Roman = QTable.read("nominal_roll_angles_dec_1_observatory.ecsv",format="ascii.ecsv")
 ```
 
+# Versioning
+You can find the version number in VERSION.md.
+
+The Roman Technical Information repo uses the following version number convention:
+
+MAJOR.MINOR.PATCH
+
+Where MAJOR is a major code change (such as the introduction of a many new parameters), MINOR is a minor code change (such as the introduction of a new table), and PATCH is a small patch/bugfix (e.g., fixing a typo). See [Semantic Versioning](https://semver.org) for more details.
+
 # Contributions and Feedback
 
 Please see our [contributing instructions](CONTRIBUTING.md) for more information.
