@@ -6,7 +6,12 @@
 # - {name: Grism_red, unit: nm, datatype: float64, description: Grism red edge.}
 # delimiter: ','
 # meta: !!omap
-# - {comments: Roman/WFI blue and red edges for the grism at the center of each sensor chip assembly.}
+# - {comments: 'Roman/WFI blue and red edges for the grism at the center of each sensor chip assembly. The table provides field-dependent
+#     red and blue edge wavelengths based on coating witness measurements. Errors in the effective index estimate are typically +/- 0.07
+#     and yield 0.06% fractional tolerance in the edge wavelength variation across the field. Additionally, the indices and coating thickness
+#     of the flight optics may differ from the witnesses. A future update will provide edges and field dependence measured from the flight
+#     coatings at operational temperature. The table provides convenient estimates of field dependence. Filter witness measurements and
+#     relation to flight optics are described in Switzer et al. 2025 (submitted).'}
 # schema: astropy-2.0
 SCA,Grism_blue,Grism_red
 1,996.82,1923.14

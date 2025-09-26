@@ -20,7 +20,12 @@
 # - {name: F213_red, unit: nm, datatype: float64, description: F213 filter red edge.}
 # delimiter: ','
 # meta: !!omap
-# - {comments: Roman/WFI blue and red edges for each filter at the center of each sensor chip assembly.}
+# - {comments: 'Roman/WFI blue and red edges for each filter at the center of each sensor chip assembly. The table provides field-dependent
+#     red and blue edge wavelengths based on coating witness measurements. Errors in the effective index estimate are typically +/- 0.07
+#     and yield 0.06% fractional tolerance in the edge wavelength variation across the field. Additionally, the indices and coating thickness
+#     of the flight optics may differ from the witnesses. A future update will provide edges and field dependence measured from the flight
+#     coatings at operational temperature. The table provides convenient estimates of field dependence. Filter witness measurements and
+#     relation to flight optics are described in Switzer et al. 2025 (submitted).'}
 # schema: astropy-2.0
 SCA,F062_blue,F062_red,F087_blue,F087_red,F106_blue,F106_red,F129_blue,F129_red,W146_blue,W146_red,F158_blue,F158_red,F184_blue,F184_red,F213_blue,F213_red
 1,482.39,761.8,763.0,983.55,935.26,1201.3,1129.44,1455.04,927.28,2003.07,1386.97,1785.89,1685.4,2007.22,1966.02,2315.24
