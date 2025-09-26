@@ -5,9 +5,9 @@
 # - {name: p_dispersion, unit: nm / pix, datatype: float64, description: Prism dispersion}
 # delimiter: ','
 # meta: !!omap
-# - {comments: 'Roman/WFI prism dispersion at the sensor chip assembly center. Field dependence of the dispersion is described in Bray
-#     et al. (2024) (https://ui.adsabs.harvard.edu/abs/2024JATIS..10a4003B/abstract). Users interested in a complete model of the prism
-#     and grism should contact Eric Switzer (eric.r.switzer@nasa.gov).'}
+# - {comments: 'Roman/WFI prism dispersion at the field center. Field dependence of the dispersion is described in Bray et al. (2024)
+#     (https://ui.adsabs.harvard.edu/abs/2024JATIS..10a4003B/abstract). Users interested in a complete model of the prism and grism should
+#     contact Eric Switzer (eric.r.switzer@nasa.gov).'}
 # schema: astropy-2.0
 p_mean_lam,p_dispersion
 760.51,2.17

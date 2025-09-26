@@ -5,10 +5,9 @@
 # - {name: g_dispersion, unit: nm / pix, datatype: float64, description: Grism dispersion}
 # delimiter: ','
 # meta: !!omap
-# - {comments: 'Roman/WFI grism dispersion at the sensor chip assembly center. Analysis is ongoing to model the prism dispersion in the
-#     regime > 1600 nm. Users interested in wavelengths >1600 nm should contact Eric Switzer (eric.r.switzer@nasa.gov) and refer to Bray
-#     et al. (2024) (https://ui.adsabs.harvard.edu/abs/2024JATIS..10a4003B/abstract). The design is described in Eegholm et al. (2025)
-#     (https://ui.adsabs.harvard.edu/abs/2025JATIS..11b5001E/abstract).'}
+# - {comments: 'Roman/WFI prism dispersion at the field center. Analysis is ongoing to model the prism dispersion in the regime > 1600
+#     nm. Users interested in wavelengths >1600 nm should contact Eric Switzer (eric.r.switzer@nasa.gov) and refer to Bray et al. (2024)
+#     (https://ui.adsabs.harvard.edu/abs/2024JATIS..10a4003B/abstract). The design is described in Eegholm et al. (2025) (https://ui.adsabs.harvard.edu/abs/2025JATIS..11b5001E/abstract).'}
 # schema: astropy-2.0
 g_mean_lam,g_dispersion
 998.65,1.08
