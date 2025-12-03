@@ -12,8 +12,8 @@
 #     of the flight optics may differ from the witnesses. A future update will provide edges and field dependence measured from the flight
 #     coatings at operational temperature. The table provides convenient estimates of field dependence. Filter witness measurements and
 #     relation to flight optics are described in Switzer et al. 2025 (submitted). Additionally, the prism red edge has field dependence
-#     defined by coatings on both sides of the optic, which is not fully captured by the table and is ongoing work. The blue edge should
-#     be used a primary anchor.'}
+#     defined by coatings on both sides of the optic, which is not fully captured by the table and is the focus of ongoing work. The blue
+#     edge should be used as a primary anchor.'}
 # schema: astropy-2.0
 SCA,Prism_blue,Prism_red
 1,759.87,1823.21
