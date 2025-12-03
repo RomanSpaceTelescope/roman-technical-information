@@ -5,9 +5,11 @@
 # - {name: p_dispersion, unit: nm / pix, datatype: float64, description: Prism dispersion}
 # delimiter: ','
 # meta: !!omap
-# - {comments: 'Roman/WFI prism dispersion at the field center. Field dependence of the dispersion is described in Bray et al. (2024)
-#     (https://ui.adsabs.harvard.edu/abs/2024JATIS..10a4003B/abstract). Users interested in a complete model of the prism and grism should
-#     contact Eric Switzer (eric.r.switzer@nasa.gov).'}
+# - {comments: 'Roman/WFI prism dispersion at the field center based on measurements from WFI TVAC2 combined with the Roman optical model.
+#     Analysis is ongoing to model the prism dispersion in the regime > 1600 nm and dispersions at those wavelengths in this file are
+#     not fully calibrated. Users interested in wavelengths >1600 nm, the field dependence of the prism dispersion, and/or a full model
+#     of the prism dispersion should contact Eric Switzer (eric.r.switzer@nasa.gov) and refer to Bray et al. (2024) (https://ui.adsabs.harvard.edu/abs/2024JATIS..10a4003B/abstract).
+#     The prism design is described in Eegholm et al. (2025) (https://ui.adsabs.harvard.edu/abs/2025JATIS..11b5001E/abstract).'}
 # schema: astropy-2.0
 p_mean_lam,p_dispersion
 760.51,2.17
