@@ -5,7 +5,8 @@
 | Filename| Description|
 |---------|------------|
 | Backgrounds          | Roman estimated thermal backgrounds for WFI spectroscopy.|
-| Dispersion          | Roman/WFI dispersion curves for the grism and prism.|
+| BandEdges            | Roman/WFI blue and red band edges for the grism and prism.   |
+| Dispersion           | Roman/WFI dispersion curves for the grism and prism.|
 | EffectiveAreas       | Roman/WFI spectroscopic effective area curves.|
 | Elements             | Roman/WFI spectroscopic elements parameters.|
 | Sensitivity          | Roman grism and prism spectroscopy sensitivities.|
