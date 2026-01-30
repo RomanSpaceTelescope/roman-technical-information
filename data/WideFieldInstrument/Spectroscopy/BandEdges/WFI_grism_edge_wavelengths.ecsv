@@ -11,7 +11,7 @@
 #     and yield 0.06% fractional tolerance in the edge wavelength variation across the field. Additionally, the indices and coating thickness
 #     of the flight optics may differ from the witnesses. A future update will provide edges and field dependence measured from the flight
 #     coatings at operational temperature. The table provides convenient estimates of field dependence. Filter witness measurements and
-#     relation to flight optics are described in Switzer et al. 2025 (submitted).'}
+#     relation to flight optics are described in Switzer et al. 2025 (https://ui.adsabs.harvard.edu/abs/2025ApOpt..6410525S/abstract).'}
 # schema: astropy-2.0
 SCA,Grism_blue,Grism_red
 1,996.82,1923.14
