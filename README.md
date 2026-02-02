@@ -83,4 +83,4 @@ For more information related to the Roman mission, please see the following reso
 
 More links will be added as the become available.
 
-For help with understanding or using the information in this repository, you can contact either the [Roman Helpdesk at STScI](https://stsci.service-now.com/roman) or the [Roman Helpdesk at IPAC](https://caltech-ipac.atlassian.net/servicedesk/customer/portal/1). Unsure of which one to send your question to? Don't worry, just pick one and we'll make sure it goes to the correct team.
+For help with understanding or using the information in this repository, you can contact the [Roman Space Telescope Help Desk](https://stsci.service-now.com/roman).
