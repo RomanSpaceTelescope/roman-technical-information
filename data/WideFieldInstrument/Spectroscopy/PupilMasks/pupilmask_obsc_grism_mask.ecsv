@@ -1,0 +1,43 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: sca, unit: '', datatype: string, description: Sensor chip assemby number.}
+# - {name: entrance_pupil_clear, unit: m2, datatype: float64, description: The clear area of the entrance pupil in square meters.}
+# - {name: exit_pupil_clear, unit: m2, datatype: float64, description: The clear area of the exit pupil in square meters.}
+# - {name: obscuring_frac_WRT_entrance_pupil, unit: '%', datatype: float64, description: Obscuring fraction with respect to entrance pupil
+#     in percent.}
+# - {name: clear_frac_WRT_entrance_pupil, unit: '%', datatype: float64, description: Clear fraction with respect to entrance pupil in
+#     percent.}
+# - {name: obscuring_frac_WRT_primary_mirror_aper, unit: '%', datatype: float64, description: Obscuring fraction with respect to primary
+#     mirror aperture stop in percent.}
+# - {name: clear_frac_WRT_primary_mirror_aper, unit: '%', datatype: float64, description: Clear fraction with respect to primary mirror
+#     aperture stop in percent.}
+# delimiter: ','
+# meta: !!omap
+# - {comments: 'Properties of pupil obscuration for the Roman WFI Grism pupil mask and each SCA. Pupil images are those from TDMS document
+#     RST-PYLD-ANYS-0511_01_03_22_09-29-45. Pupils are defined using the CodeV convention for a projected pupil, taking into account the
+#     tilt of the focal plane. Area of primary mirror aperture stop (m^2) =  4.3859.'}
+# schema: astropy-2.0
+sca,entrance_pupil_clear,exit_pupil_clear,obscuring_frac_WRT_entrance_pupil,clear_frac_WRT_entrance_pupil,obscuring_frac_WRT_primary_mirror_aper,clear_frac_WRT_primary_mirror_aper
+1,4.3674,3.454,20.91,79.09,21.25,78.75
+2,4.3526,3.3708,22.56,77.44,23.14,76.86
+3,4.3211,3.2559,24.65,75.35,25.77,74.23
+4,4.3631,3.39,22.3,77.7,22.71,77.29
+5,4.3379,3.3189,23.49,76.51,24.33,75.67
+6,4.2943,3.2168,25.09,74.91,26.66,73.34
+7,4.2904,3.311,22.83,77.17,24.51,75.49
+8,4.293,3.2535,24.21,75.79,25.82,74.18
+9,4.2602,3.1749,25.48,74.52,27.61,72.39
+10,4.3674,3.4536,20.92,79.08,21.26,78.74
+11,4.3526,3.3768,22.42,77.58,23.01,76.99
+12,4.3211,3.2592,24.57,75.43,25.69,74.31
+13,4.3635,3.3877,22.36,77.64,22.76,77.24
+14,4.3414,3.3278,23.35,76.65,24.12,75.88
+15,4.298,3.2236,25.0,75.0,26.5,73.5
+16,4.2947,3.3003,23.15,76.85,24.75,75.25
+17,4.2971,3.2568,24.21,75.79,25.74,74.26
+18,4.2643,3.1829,25.36,74.64,27.43,72.57
+Min,4.2602,3.1749,20.91,74.52,21.25,72.39
+Max,4.3674,3.454,25.48,79.09,27.61,78.75
+avg,4.3211,3.3064,23.49,76.51,24.61,75.39
+std,0.0347,0.0831,1.38,1.38,1.89,1.89
