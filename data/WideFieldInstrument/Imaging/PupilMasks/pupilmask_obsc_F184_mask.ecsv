@@ -2,7 +2,7 @@
 # ---
 # datatype:
 # - {name: sca, unit: '', datatype: string, description: Sensor chip assemby number.}
-# - {name: entrance_pupil_clear, unit: m2, datatype: float64, description: The clear area of the entrance pupil in square meters.}
+# - {name: entrance_pupil_clear, unit: m2, datatype: float64, description: The clear area of the entrance pupil in square meters. For this mask, the telescope pupil is defined by the projection of the exit pupil mask back to the entrance; as such, each SCA has a different obscuration.}
 # - {name: exit_pupil_clear, unit: m2, datatype: float64, description: The clear area of the exit pupil in square meters.}
 # - {name: obscuring_frac_WRT_entrance_pupil, unit: '%', datatype: float64, description: Obscuring fraction with respect to entrance pupil
 #     in percent.}
