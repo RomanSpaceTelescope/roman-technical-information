@@ -14,9 +14,9 @@
 #     aperture stop in percent.}
 # delimiter: ','
 # meta: !!omap
-# - {comments: 'Properties of pupil obscuration for the Roman WFI Prism pupil mask and each SCA. Pupil images are those from TDMS document
+# - {comments: 'Properties of pupil obscuration for the Roman WFI Prism pupil mask and each SCA. The pupil masks act as both a Lyot stop to mitigate diffracted light from the telescope secondary mirror and support structures and a cold stop to mitigate thermal emission from the same warm telescope components. The F062, F087, F106, F129, F158, and F146 filter assemblies carry the "skinny" mask, which has a smaller central obscuration and thinner secondary support blockers. The F184 and F213 filter assemblies carry the "F184" mask, which has a larger central obscuration and thicker secondary support blockers to better mitigate thermal emission into these longer wavelength filters. Pupil images are those from TDMS document
 #     RST-PYLD-ANYS-0511_01_03_22_09-29-45. Pupils are defined using the CodeV convention for a projected pupil, taking into account the
-#     tilt of the focal plane. Area of primary mirror aperture stop (m^2) =  4.3859.'}
+#     tilt of the focal plane. Area of primary mirror aperture stop (m^2) =  4.3859. '}
 # schema: astropy-2.0
 sca,entrance_pupil_clear,exit_pupil_clear,obscuring_frac_WRT_entrance_pupil,clear_frac_WRT_entrance_pupil,obscuring_frac_WRT_primary_mirror_aper,clear_frac_WRT_primary_mirror_aper
 1,4.3859,3.4976,20.25,79.75,20.25,79.75
