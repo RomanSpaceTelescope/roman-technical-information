@@ -14,6 +14,17 @@ This repo can be easily installed via pip:
 pip install "git+https://github.com/RomanSpaceTelescope/roman-technical-information.git"
 ```
 
+You can then check that the code has installed properly by typing the following commands in Python:
+
+```
+import roman_technical_information
+from roman_technical_information import io
+
+print(io.load_yaml(
+    "Observatory/MissionandObservatoryTechnicalOverview/MissionandObservatory.yaml"
+).keys())
+```
+
 
 # Using this Repository
 
