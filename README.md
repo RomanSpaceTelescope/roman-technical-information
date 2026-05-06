@@ -7,6 +7,25 @@ This repository hosts technical information related to the Nancy Grace Roman Spa
 * Committees performing definition of the community survey programs
 * Roman user community
 
+# Installing this Repository
+
+This repo can be easily installed via pip:
+```
+pip install "git+https://github.com/RomanSpaceTelescope/roman-technical-information.git"
+```
+
+You can then check that the code has installed properly by typing the following commands in Python:
+
+```
+import roman_technical_information
+from roman_technical_information import io
+
+print(io.load_yaml(
+    "Observatory/MissionandObservatoryTechnicalOverview/MissionandObservatory.yaml"
+).keys())
+```
+
+
 # Using this Repository
 
 The information in this respository is tagged for releases. We encourage users to use the released versions to better communicate the version of the information used, particularly as some items are updated frequently during the integration and test process.

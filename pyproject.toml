@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roman-technical-information"
+dynamic = ["version"]
+description = "Roman Space Telescope technical information (YAML/ECSV data and helpers)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE.md" }
+authors = [
+  { name = "Roman Project Science Team" }
+]
+
+dependencies = [
+  "pyyaml",
+  "astropy",
+]
+
+[project.urls]
+Homepage = "https://github.com/RomanSpaceTelescope/roman-technical-information"
+Source = "https://github.com/RomanSpaceTelescope/roman-technical-information"
+
+[tool.setuptools]
+packages = ["roman_technical_information"]
+
+[tool.setuptools.package-data]
+roman_technical_information = ["data/**/*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "roman_technical_information.__version__" }
