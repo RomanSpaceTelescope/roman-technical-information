@@ -29,4 +29,4 @@ packages = ["roman_technical_information"]
 roman_technical_information = ["data/**/*"]
 
 [tool.setuptools.dynamic]
-version = { attr = "roman_technical_information.__version__" }
+version = {file = "VERSION.md"}
