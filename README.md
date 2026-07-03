@@ -28,14 +28,14 @@ print(io.load_yaml(
 
 # Using this Repository
 
-The information in this respository is tagged for releases. We encourage users to use the released versions to better communicate the version of the information used, particularly as some items are updated frequently.
+The information in this repository is tagged for releases. We encourage users to use the released versions to better communicate the version of the information used, particularly as some items are updated frequently.
 
 Within the data/ directory, information related to the spacecraft, the WFI, and the Coronagraph are broken out into separate subdirectories. Each folder contains a README.md file that describes the information contained within as well as giving the update history for the information.
 
 **Note:** Most files here are either in a .yaml or .ecsv format. Either can be easily read in with Python3.
 
 ## YAML Files 
-YAML file can be read in with the [pyyaml packge](https://pyyaml.org). For more details, please see the [pyyaml documentation](https://pyyaml.org/wiki/PyYAMLDocumentation).
+A YAML file can be read in with the [pyyaml package](https://pyyaml.org). For more details, please see the [pyyaml documentation](https://pyyaml.org/wiki/PyYAMLDocumentation).
 For example, here's how to read in the yaml file `MissionandObservatory.yaml` located in `roman-technical-information/data/Observatory/MissionandObservatoryTechnicalOverview/`:
 ```
 # import the yaml package (installed via the pyyaml package)
@@ -82,7 +82,7 @@ The Roman Technical Information repo uses the following version number conventio
 
 MAJOR.MINOR.PATCH
 
-Where MAJOR is a major code change (such as the introduction of a many new parameters), MINOR is a minor code change (such as the introduction of a new table), and PATCH is a small patch/bugfix (e.g., fixing a typo). See [Semantic Versioning](https://semver.org) for more details.
+Where MAJOR is a major code change (such as the introduction of many new parameters), MINOR is a minor code change (such as the introduction of a new table), and PATCH is a small patch/bugfix (e.g., fixing a typo). See [Semantic Versioning](https://semver.org) for more details.
 
 # Contributions and Feedback
 
@@ -100,6 +100,6 @@ For more information related to the Roman mission, please see the following reso
 * [Roman mission website at Goddard Space Flight Center (GSFC)](https://roman.gsfc.nasa.gov/)
 * [The Roman Documentation System (RDox) at STScI](https://roman-docs.stsci.edu/)
 
-More links will be added as the become available.
+More links will be added as they become available.
 
 For help with understanding or using the information in this repository, you can contact the [Roman Space Telescope Help Desk](https://stsci.service-now.com/roman).

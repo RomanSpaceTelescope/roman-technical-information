@@ -4,6 +4,6 @@
 
 | Filename| Description|
 |---------|------------|
-| grism_spectroscopy_sensitivty.ecsv | Roman grism (G150) spectroscopy sensitivity. |
-| prism_spectroscopy_sensitivty.ecsv | Roman/WFI prism (P127) spectroscopy sensitivity. |
+| grism_spectroscopy_sensitivity.ecsv | Roman grism (G150) spectroscopy sensitivity. |
+| prism_spectroscopy_sensitivity.ecsv | Roman/WFI prism (P127) spectroscopy sensitivity. |
 

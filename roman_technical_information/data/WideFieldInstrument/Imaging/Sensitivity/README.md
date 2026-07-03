@@ -4,5 +4,5 @@
 
 | Filename| Description|
 |---------|------------|
-| AB_mag_limiting_Sensitivity.ecsv | Roman/WFI AB magnitude limiting sensitivities. |
+| AB_mag_limiting_sensitivity.ecsv | Roman/WFI AB magnitude limiting sensitivities. |
 
