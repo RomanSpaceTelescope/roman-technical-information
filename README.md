@@ -11,7 +11,7 @@ This repository hosts technical information related to the Nancy Grace Roman Spa
 
 This repo can be easily installed via pip:
 ```
-pip install "git+https://github.com/RomanSpaceTelescope/roman-technical-information.git"
+pip install roman-technical-information
 ```
 
 You can then check that the code has installed properly by typing the following commands in Python:
