@@ -1,6 +1,8 @@
 # %ECSV 1.0
 # ---
-# Effective area for Roman (m^2) - parameters as of 2024 03 01
+# delimiter: ','
+# meta:
+#   description: Effective area for Roman (m^2) - parameters as of 2024 03 01
 # datatype:
 # - {name: Wave, datatype: float32}
 # - {name: F062, datatype: float32}
