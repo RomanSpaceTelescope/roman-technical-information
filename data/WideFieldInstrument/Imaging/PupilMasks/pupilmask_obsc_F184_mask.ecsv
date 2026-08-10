@@ -1,0 +1,43 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: sca, unit: '', datatype: string, description: Sensor chip assemby number.}
+# - {name: entrance_pupil_clear, unit: m2, datatype: float64, description: The clear area of the entrance pupil in square meters. For this mask, the telescope pupil is defined by the projection of the exit pupil mask back to the entrance; as such, each SCA has a different obscuration.}
+# - {name: exit_pupil_clear, unit: m2, datatype: float64, description: The clear area of the exit pupil in square meters.}
+# - {name: obscuring_frac_WRT_entrance_pupil, unit: '%', datatype: float64, description: Obscuring fraction with respect to entrance pupil
+#     in percent.}
+# - {name: clear_frac_WRT_entrance_pupil, unit: '%', datatype: float64, description: Clear fraction with respect to entrance pupil in
+#     percent.}
+# - {name: obscuring_frac_WRT_primary_mirror_aper, unit: '%', datatype: float64, description: Obscuring fraction with respect to primary
+#     mirror aperture stop in percent.}
+# - {name: clear_frac_WRT_primary_mirror_aper, unit: '%', datatype: float64, description: Clear fraction with respect to primary mirror
+#     aperture stop in percent.}
+# delimiter: ','
+# meta: !!omap
+# - {comments: 'Properties of pupil obscuration for the Roman WFI F184 pupil mask and each SCA. The pupil masks act as both a Lyot stop to mitigate diffracted light from the telescope secondary mirror and support structures and a cold stop to mitigate thermal emission from the same warm telescope components. The F062, F087, F106, F129, F158, and F146 filter assemblies carry the "skinny" mask, which has a smaller central obscuration and thinner secondary support blockers. The F184 and F213 filter assemblies carry the "F184" mask, which has a larger central obscuration and thicker secondary support blockers to better mitigate thermal emission into these longer wavelength filters. Pupil images are those from TDMS document
+#     RST-PYLD-ANYS-0511_01_03_22_09-29-45. Pupils are defined using the CodeV convention for a projected pupil, taking into account the
+#     tilt of the focal plane. Area of primary mirror aperture stop (m^2) =  4.3859. '}
+# schema: astropy-2.0
+sca,entrance_pupil_clear,exit_pupil_clear,obscuring_frac_WRT_entrance_pupil,clear_frac_WRT_entrance_pupil,obscuring_frac_WRT_primary_mirror_aper,clear_frac_WRT_primary_mirror_aper
+1,4.3244,3.1405,27.38,72.62,28.4,71.6
+2,4.3265,3.1439,27.33,72.67,28.32,71.68
+3,4.2814,3.0828,27.99,72.01,29.71,70.29
+4,4.3017,3.1244,27.37,72.63,28.76,71.24
+5,4.2945,3.1169,27.42,72.58,28.93,71.07
+6,4.2618,3.0402,28.66,71.34,30.68,69.32
+7,4.2342,3.0917,26.98,73.02,29.51,70.49
+8,4.2428,3.0763,27.49,72.51,29.86,70.14
+9,4.2221,3.0057,28.81,71.19,31.47,68.53
+10,4.3245,3.1448,27.28,72.72,28.3,71.7
+11,4.33,3.1485,27.29,72.71,28.21,71.79
+12,4.2814,3.0915,27.79,72.21,29.51,70.49
+13,4.3131,3.1364,27.28,72.72,28.49,71.51
+14,4.306,3.1327,27.25,72.75,28.57,71.43
+15,4.2617,3.0583,28.24,71.76,30.27,69.73
+16,4.2457,3.1056,26.85,73.15,29.19,70.81
+17,4.2541,3.0912,27.34,72.66,29.52,70.48
+18,4.221,3.0187,28.48,71.52,31.17,68.83
+Min,4.221,3.0057,26.85,71.19,28.21,68.53
+Max,4.33,3.1485,28.81,73.15,31.47,71.79
+avg,4.2793,3.0972,27.62,72.38,29.38,70.62
+std,0.0364,0.0428,0.56,0.56,0.98,0.98
