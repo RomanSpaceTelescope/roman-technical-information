@@ -1,0 +1,33 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: filter, datatype: string, description: WFI filter name}
+# - {name: RCSLEDBand, datatype: int64, description: RCS LEDP band}
+# - {name: RCSLEDSide, datatype: string, description: RCS side (A or B)}
+# - {name: RCSLEDBank, datatype: int64, description: RCS LED bank (1 or 2)}
+# - {name: RCSLEDPrechargeRequirement, unit: s, datatype: float64, description: 'Recommended LED precharge requirement, expressed as milliamp-seconds
+#     of precharge per milliamp of final drive current (dimensionally reduces to seconds)'}
+# delimiter: ','
+# meta: !!omap
+# - comments: ['Roman WFI Relative Calibration System (RCS) LEDP recommended precharge requirements. Only bands 4-6 (F129, F158, F184)
+#       require precharge; bands 1-3 (F062, F087, F106) do not. Source measurement date(s): 2024-03-19.']
+# - {last updated: 2026-Apr-01}
+# - __serialized_columns__:
+#     RCSLEDPrechargeRequirement:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: s}
+#       value: !astropy.table.SerializedColumn {name: RCSLEDPrechargeRequirement}
+# schema: astropy-2.0
+filter,RCSLEDBand,RCSLEDSide,RCSLEDBank,RCSLEDPrechargeRequirement
+F129,4,A,1,1665.0
+F129,4,A,2,1665.0
+F158,5,A,1,1000.0
+F158,5,A,2,1000.0
+F184,6,A,1,800.0
+F184,6,A,2,800.0
+F129,4,B,1,1665.0
+F129,4,B,2,1665.0
+F158,5,B,1,1000.0
+F158,5,B,2,1000.0
+F184,6,B,1,800.0
+F184,6,B,2,800.0
