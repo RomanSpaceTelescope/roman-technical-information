@@ -1,0 +1,72 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: filter, datatype: string, description: WFI filter name}
+# - {name: RCSLEDBand, datatype: int64, description: RCS LEDP band}
+# - {name: RCSLEDSide, datatype: string, description: RCS side (A or B)}
+# - {name: RCSLEDBank, datatype: int64, description: RCS LED bank (1 or 2)}
+# - {name: RCSLEDLowRangeC3, datatype: float64, description: Low current range flux-to-command-code polynomial coefficient for flux^3}
+# - {name: RCSLEDLowRangeC2, datatype: float64, description: Low current range flux-to-command-code polynomial coefficient for flux^2}
+# - {name: RCSLEDLowRangeC1, datatype: float64, description: Low current range flux-to-command-code polynomial coefficient for flux^1}
+# - {name: RCSLEDLowRangeC0, datatype: float64, description: Low current range flux-to-command-code polynomial coefficient for flux^0}
+# - {name: RCSLEDHighRangeC3, datatype: float64, description: High current range flux-to-command-code polynomial coefficient for flux^3}
+# - {name: RCSLEDHighRangeC2, datatype: float64, description: High current range flux-to-command-code polynomial coefficient for flux^2}
+# - {name: RCSLEDHighRangeC1, datatype: float64, description: High current range flux-to-command-code polynomial coefficient for flux^1}
+# - {name: RCSLEDHighRangeC0, datatype: float64, description: High current range flux-to-command-code polynomial coefficient for flux^0}
+# - {name: RCSLEDLowRangeMinFlux, unit: electron / (pix s), datatype: float64, description: Minimum flux for which the low range coefficients
+#     are valid}
+# - {name: RCSLEDLowRangeMaxFlux, unit: electron / (pix s), datatype: float64, description: Maximum flux for which the low range coefficients
+#     are valid}
+# - {name: RCSLEDHighRangeMinFlux, unit: electron / (pix s), datatype: float64, description: Minimum flux for which the high range coefficients
+#     are valid}
+# - {name: RCSLEDHighRangeMaxFlux, unit: electron / (pix s), datatype: float64, description: Maximum flux for which the high range coefficients
+#     are valid}
+# delimiter: ','
+# meta: !!omap
+# - comments: ['Roman WFI Relative Calibration System (RCS) LEDP flux-to-command-code 3rd order polynomial coefficients: code = C3*flux^3
+#       + C2*flux^2 + C1*flux + C0. Low range applies for flux between RCSLEDLowRangeMinFlux and RCSLEDLowRangeMaxFlux (command code <=
+#       65535); high range applies for flux between RCSLEDHighRangeMinFlux and RCSLEDHighRangeMaxFlux (command code > 65535, bit 16 set).']
+# - {last updated: 2026-Apr-01}
+# - __serialized_columns__:
+#     RCSLEDHighRangeMaxFlux:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: electron / (pix s)}
+#       value: !astropy.table.SerializedColumn {name: RCSLEDHighRangeMaxFlux}
+#     RCSLEDHighRangeMinFlux:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: electron / (pix s)}
+#       value: !astropy.table.SerializedColumn {name: RCSLEDHighRangeMinFlux}
+#     RCSLEDLowRangeMaxFlux:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: electron / (pix s)}
+#       value: !astropy.table.SerializedColumn {name: RCSLEDLowRangeMaxFlux}
+#     RCSLEDLowRangeMinFlux:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: electron / (pix s)}
+#       value: !astropy.table.SerializedColumn {name: RCSLEDLowRangeMinFlux}
+# schema: astropy-2.0
+filter,RCSLEDBand,RCSLEDSide,RCSLEDBank,RCSLEDLowRangeC3,RCSLEDLowRangeC2,RCSLEDLowRangeC1,RCSLEDLowRangeC0,RCSLEDHighRangeC3,RCSLEDHighRangeC2,RCSLEDHighRangeC1,RCSLEDHighRangeC0,RCSLEDLowRangeMinFlux,RCSLEDLowRangeMaxFlux,RCSLEDHighRangeMinFlux,RCSLEDHighRangeMaxFlux
+F062,1,A,1,0.213105687873512,-23.52653760081396,1783.238471421353,311.3698018270614,0.0,0.0,2.066986403950011,65452.88744624927,0.3,57.4,57.4,31745.3
+F087,2,A,1,0.004990286516589947,-1.103382057142394,641.851507314993,-24.55897191087071,0.0,0.0,1.122016672673619,65460.98547871851,0.3,112.8,112.8,58474.1
+F106,3,A,1,0.002017740317285039,-0.04324401961380012,566.4701382516901,-1.129200105067125,0.0,0.0,1.415006564387479,65418.77195935697,0.3,111.6,111.6,46396.4
+F129,4,A,1,0.01848982391279558,-3.844671352253957,802.3776492363818,623.9457009499077,0.0,0.0,1.256641933639007,65439.29849876433,0.3,107.6,107.6,52227.0
+F158,5,A,1,0.01808763481625525,-3.494778249340697,730.8367926106545,109.9452685545927,0.0,0.0,1.388207814907765,65419.39389036442,0.3,115.1,115.1,47291.6
+F184,6,A,1,0.01500687759981146,-2.800779022903763,676.6492994484598,188.281412744664,0.0,0.0,1.398308046792664,65414.06030911421,0.3,117.7,117.7,46953.8
+F062,1,A,2,0.2027631257731746,-22.98691501705455,1785.444162240226,470.5725570681332,0.0,0.0,2.069580749724162,65429.1136652808,0.3,57.3,57.3,31716.9
+F087,2,A,2,0.002946454538894387,-0.7585904979764925,641.4432088623682,-64.49024664294937,0.0,0.0,1.172375939135186,65423.51932976482,0.3,110.5,110.5,55994.3
+F106,3,A,2,0.003428617757740526,-0.3793291818014155,533.6486843856416,-54.57294055934378,0.0,0.0,1.413982279281899,65376.87039123472,0.3,121.8,121.8,46459.6
+F129,4,A,2,0.01395877924115262,-3.186776806935949,771.1860712948322,384.9854252898004,0.0,0.0,1.264766517630271,65408.76891491582,0.3,110.5,110.5,51915.6
+F158,5,A,2,0.01471086689153136,-2.861348240530597,682.8921016752469,71.29770274210507,0.0,0.0,1.357134539992495,65384.33594288875,0.3,118.8,118.8,48400.2
+F184,6,A,2,0.01399214053985695,-2.608921245165976,677.5004432954884,144.4796172634717,0.0,0.0,1.434149213395331,65379.12760039998,0.3,116.1,116.1,45804.7
+F062,1,B,1,0.1428509866799784,-18.27628896768021,1600.665633123624,407.2729136202634,0.0,0.0,1.824770761994247,65433.49998167923,0.3,64.0,64.0,35969.7
+F087,2,B,1,0.004383421172327465,-1.005598012618547,604.318485765953,-79.7674884024979,0.0,0.0,1.055355982022938,65437.01368973526,0.3,120.0,120.0,62190.3
+F106,3,B,1,0.004663971129152837,-0.6643366609383959,549.6151600651614,-89.15294173700781,0.0,0.0,1.420642208150422,65373.19610755942,0.3,121.9,121.9,46244.4
+F129,4,B,1,0.03772083493479269,-6.666108857160201,883.066360729839,455.5754084881515,0.0,0.0,1.247446725129335,65407.10956174717,0.3,107.9,107.9,52637.8
+F158,5,B,1,0.01805835710048483,-3.54285123746078,722.6708129162114,57.92796404960937,0.0,0.0,1.375424873129113,65379.4934011913,0.3,117.7,117.7,47760.1
+F184,6,B,1,0.01898234990192352,-3.569248946712973,715.4194412678934,282.6835771401303,0.0,0.0,1.422185531984416,65374.54194936532,0.3,117.0,117.0,46193.3
+F062,1,B,2,0.1576779342683085,-19.91001637319621,1649.685654226276,243.4300517449054,0.0,0.0,1.867307701707858,65396.44195654339,0.3,63.9,74.8,35170.1
+F087,2,B,2,0.001319476578185589,-0.4170757110977866,550.4959176936433,-118.5527485095007,0.0,0.0,1.083276075790706,65385.70771105828,0.3,126.5,138.8,60634.8
+F106,3,B,2,0.004009396266483028,-0.5808150430698447,543.2583050659999,-23.87064655700965,0.0,0.0,1.442844842265862,65329.09597909389,0.3,123.1,143.5,45563.3
+F129,4,B,2,0.03995502287030499,-7.032613041878914,889.7451402179273,299.3001449539648,0.0,0.0,1.249564952529969,65371.70393835166,0.3,109.0,131.5,52576.9
+F158,5,B,2,0.01680372742815244,-3.314695346714279,715.1524302950517,-1.22541872991429,0.0,0.0,1.382372691640653,65337.54186270788,0.3,117.5,143.6,47550.4
+F184,6,B,2,0.02026368248949416,-3.858630994592748,732.7001007373713,196.1841110899529,0.0,0.0,1.417533748145697,65334.32670338163,0.3,116.9,143.0,46373.2

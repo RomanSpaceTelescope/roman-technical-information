@@ -1,0 +1,97 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: filter, datatype: string, description: WFI filter name}
+# - {name: RCSLEDBand, datatype: int64, description: RCS LEDP band}
+# - {name: RCSLEDSide, datatype: string, description: RCS side (A or B)}
+# - {name: RCSLEDBank, datatype: int64, description: RCS LED bank (1 or 2)}
+# - {name: RCSLEDLowRangeMinFlux, unit: electron / (pix s), datatype: float64, description: Minimum commandable flux in the low current
+#     range}
+# - {name: RCSLEDLowRangeMaxFlux, unit: electron / (pix s), datatype: float64, description: Maximum commandable flux in the low current
+#     range}
+# - {name: RCSLEDHighRangeMinFlux, unit: electron / (pix s), datatype: float64, description: Minimum commandable flux in the high current
+#     range}
+# - {name: RCSLEDHighRangeMaxFlux, unit: electron / (pix s), datatype: float64, description: Maximum commandable flux in the high current
+#     range}
+# - {name: RCSLEDFluxGap, unit: electron / (pix s), datatype: float64, description: 'RCSLEDHighRangeMinFlux minus RCSLEDLowRangeMaxFlux;
+#     positive indicates a real gap between the low and high current ranges, negative indicates the ranges overlap'}
+# - {name: RCSLEDHasFluxGap, datatype: bool, description: True if RCSLEDFluxGap is positive (a real flux gap exists)}
+# - {name: RCSLEDDarkElementPeakToValley, unit: '%', datatype: float64, description: Dark element peak-to-valley non-uniformity; measured
+#     on Side B Bank 1 only}
+# - {name: RCSLEDLOLOPeakToValley, unit: '%', datatype: float64, description: LOLO (low flux) peak-to-valley non-uniformity; measured
+#     on Side B Bank 2 only}
+# - {name: RCSLEDLOLOPixelsPassingUniformity, unit: '%', datatype: float64, description: Percentage of LOLO pixels passing the 25% uniformity
+#     requirement; measured on Side B Bank 2 only}
+# delimiter: ','
+# meta: !!omap
+# - comments: ['Roman WFI Relative Calibration System (RCS) LEDP low/high current range flux bounds and the resulting flux gap; flux range
+#       bounds from the 2026-Apr-01 calibration, dark element and LOLO uniformity columns from the 2024-Oct-25 RCS Personality table.']
+# - {last updated: 2026-Sep-11}
+# - __serialized_columns__:
+#     RCSLEDDarkElementPeakToValley:
+#       __class__: astropy.units.quantity.Quantity
+#       __info__: {description: Dark element peak-to-valley non-uniformity; measured on Side B Bank 1 only}
+#       unit: &id001 !astropy.units.Unit {unit: '%'}
+#       value: !astropy.table.SerializedColumn
+#         __class__: astropy.utils.masked.core.MaskedNDArray
+#         data: !astropy.table.SerializedColumn {name: RCSLEDDarkElementPeakToValley}
+#     RCSLEDFluxGap:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: electron / (pix s)}
+#       value: !astropy.table.SerializedColumn {name: RCSLEDFluxGap}
+#     RCSLEDHighRangeMaxFlux:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: electron / (pix s)}
+#       value: !astropy.table.SerializedColumn {name: RCSLEDHighRangeMaxFlux}
+#     RCSLEDHighRangeMinFlux:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: electron / (pix s)}
+#       value: !astropy.table.SerializedColumn {name: RCSLEDHighRangeMinFlux}
+#     RCSLEDLOLOPeakToValley:
+#       __class__: astropy.units.quantity.Quantity
+#       __info__: {description: LOLO (low flux) peak-to-valley non-uniformity; measured on Side B Bank 2 only}
+#       unit: *id001
+#       value: !astropy.table.SerializedColumn
+#         __class__: astropy.utils.masked.core.MaskedNDArray
+#         data: !astropy.table.SerializedColumn {name: RCSLEDLOLOPeakToValley}
+#     RCSLEDLOLOPixelsPassingUniformity:
+#       __class__: astropy.units.quantity.Quantity
+#       __info__: {description: Percentage of LOLO pixels passing the 25% uniformity requirement; measured on Side B Bank 2 only}
+#       unit: *id001
+#       value: !astropy.table.SerializedColumn
+#         __class__: astropy.utils.masked.core.MaskedNDArray
+#         data: !astropy.table.SerializedColumn {name: RCSLEDLOLOPixelsPassingUniformity}
+#     RCSLEDLowRangeMaxFlux:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: electron / (pix s)}
+#       value: !astropy.table.SerializedColumn {name: RCSLEDLowRangeMaxFlux}
+#     RCSLEDLowRangeMinFlux:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: electron / (pix s)}
+#       value: !astropy.table.SerializedColumn {name: RCSLEDLowRangeMinFlux}
+# schema: astropy-2.0
+filter,RCSLEDBand,RCSLEDSide,RCSLEDBank,RCSLEDLowRangeMinFlux,RCSLEDLowRangeMaxFlux,RCSLEDHighRangeMinFlux,RCSLEDHighRangeMaxFlux,RCSLEDFluxGap,RCSLEDHasFluxGap,RCSLEDDarkElementPeakToValley,RCSLEDLOLOPeakToValley,RCSLEDLOLOPixelsPassingUniformity
+F062,1,A,1,0.3,57.4,57.4,31745.3,0.0,False,,,
+F087,2,A,1,0.3,112.8,112.8,58474.1,0.0,False,,,
+F106,3,A,1,0.3,111.6,111.6,46396.4,0.0,False,,,
+F129,4,A,1,0.3,107.6,107.6,52227.0,0.0,False,,,
+F158,5,A,1,0.3,115.1,115.1,47291.6,0.0,False,,,
+F184,6,A,1,0.3,117.7,117.7,46953.8,0.0,False,,,
+F062,1,A,2,0.3,57.3,57.3,31716.9,0.0,False,,,
+F087,2,A,2,0.3,110.5,110.5,55994.3,0.0,False,,,
+F106,3,A,2,0.3,121.8,121.8,46459.6,0.0,False,,,
+F129,4,A,2,0.3,110.5,110.5,51915.6,0.0,False,,,
+F158,5,A,2,0.3,118.8,118.8,48400.2,0.0,False,,,
+F184,6,A,2,0.3,116.1,116.1,45804.7,0.0,False,,,
+F062,1,B,1,0.3,64.0,64.0,35969.7,0.0,False,73.57,,
+F087,2,B,1,0.3,120.0,120.0,62190.3,0.0,False,75.4,,
+F106,3,B,1,0.3,121.9,121.9,46244.4,0.0,False,75.25,,
+F129,4,B,1,0.3,107.9,107.9,52637.8,0.0,False,75.16,,
+F158,5,B,1,0.3,117.7,117.7,47760.1,0.0,False,76.22,,
+F184,6,B,1,0.3,117.0,117.0,46193.3,0.0,False,76.51,,
+F062,1,B,2,0.3,63.9,74.8,35170.1,10.899999999999999,True,,70.04,99.9
+F087,2,B,2,0.3,126.5,138.8,60634.8,12.300000000000011,True,,71.54,99.9
+F106,3,B,2,0.3,123.1,143.5,45563.3,20.400000000000006,True,,65.13,99.9
+F129,4,B,2,0.3,109.0,131.5,52576.9,22.5,True,,67.42,99.9
+F158,5,B,2,0.3,117.5,143.6,47550.4,26.099999999999994,True,,63.01,99.9
+F184,6,B,2,0.3,116.9,143.0,46373.2,26.099999999999994,True,,5.7,96.4
